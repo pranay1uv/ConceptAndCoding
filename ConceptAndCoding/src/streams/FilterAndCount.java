@@ -19,7 +19,7 @@ public class FilterAndCount {
 		salarylist.add(95000);
 		
 		
-		long count = salarylist.stream().filter((Integer sal) -> sal>=30000).count();
+		long count = salarylist.stream().filter((sal) -> sal>=30000).count();
 		System.out.println(count);
 
 	}
