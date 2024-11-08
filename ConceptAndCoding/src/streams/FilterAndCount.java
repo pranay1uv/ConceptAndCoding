@@ -1,6 +1,7 @@
 package streams;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class FilterAndCount {
@@ -18,8 +19,10 @@ public class FilterAndCount {
 		salarylist.add(85000);
 		salarylist.add(95000);
 		
+		List<Integer> asList = Arrays.asList(25000,35000,45000,55000,65000,75000,85000,95000);
 		
-		long count = salarylist.stream().filter((sal) -> sal>=30000).count();
+		
+		long count = asList.stream().filter((sal) -> sal>=30000).count();
 		System.out.println(count);
 
 	}
