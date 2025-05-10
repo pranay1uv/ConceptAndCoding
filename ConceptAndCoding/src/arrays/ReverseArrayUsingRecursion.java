@@ -1,8 +1,11 @@
 package arrays; 
-public class ReverseArray {
+public class ReverseArrayUsingRecursion {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		// 1 2 3 4 5 - Input - len = 4 max index = 4 so even
+		// 5 4 3 2 1
+		
 		int[] array = {1,2,3,4,5};
 		int length = array.length;
 		int[] reverseArrayPrint = reverseArray(array,0,length-1);

@@ -24,6 +24,10 @@ public class FilterAndCount {
 		
 		long count = asList.stream().filter((sal) -> sal>=30000).count();
 		System.out.println(count);
+		
+		asList.forEach(intElement->System.out.println());
+		
+		// Lambda Syntax : parameters Lamda Operator Body of the Lambda
 
 	}
 

@@ -18,11 +18,14 @@ public class PrefixStringandSuffixString {
 		for(int i=0; i<stringName.length()+1; i++) {
 			String substring = stringName.substring(0, i);
 			System.out.println(substring);
+		    StringBuilder sb = new StringBuilder();
+		    sb.reverse();
 		}
 		
 		for(int j = 0; j<=stringName.length();j++) {
 			String substring = stringName.substring(j, stringName.length());
 			System.out.println(substring);
+			//Character.to
 		}
 		
 	}

@@ -45,5 +45,4 @@ public class OccurencesOfelementBruteForce {
 			count = 1;
 		}
 	}
-
 }

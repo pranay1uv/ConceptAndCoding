@@ -31,6 +31,7 @@ public class LambdaParameters {
 		addable adding =   (a, b) ->  { int c = a+b; 
                                         return c;
                                       };
+                                      
         int LC = adding.addition(25, 35);
         System.out.println(LC);
 		

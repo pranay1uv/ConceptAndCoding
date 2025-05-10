@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class operationOnElementWithStreams {
@@ -15,8 +16,13 @@ public class operationOnElementWithStreams {
 		set.addAll(asList);
 		
 		Set<Integer> setStream = new HashSet<>();
-		setStream = set.stream().map(I->I*2).collect(Collectors.toSet());
+		setStream = set.stream().map((I)->I*2).sorted().collect(Collectors.toSet());
 		System.out.println(setStream);
+		
+		Function<Integer, Integer> function = ((t) -> {return t*t;});
+		
+		
+		
 		
 	}
 
